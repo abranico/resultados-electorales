@@ -14,12 +14,26 @@
     <header>
         <!--Barra de logo portal-->
         <div class="header-page">
-            <img src="img/Logo_DINE_negativo.png" alt="logo" class="logo">
+            <a href="index.html">
+                <img src="img/Logo_DINE_negativo.png" alt="logo" class="logo">
+            </a>
         </div>
         <!--Barra de menú principal-->
+        <form>
+            <select name="filtro-año" id="años">
+                <option selected disabled>Año</option>
+            </select>
+            <select name="filtro-cargo" id="cargos">
+                <option selected disabled>Cargo</option>
+            </select>
+            <select name="filtro-distrito" id="distritos">
+                <option selected disabled>Distrito</option>
+            </select>
+            <button type="submit"><img src="img/icons/icons8-lupa.svg">FILTRAR</button>
+        </form>
         <ul>
-            <li><a class="active" href="informes.html">Informes</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a class="active" href="informes.html">INFORMES</a></li>
+            <li><a class="active" href="index.html">INICIO</a></li>
         </ul>
     </header>
     <!-- Contenido principal de la página -->
@@ -30,8 +44,12 @@
             <p>Párrafo o subtítulo</p>
             <div>Imagen</div>
         </section>
+        <section id="sec-messages">
+            <!-- agregar mensajes al usuario, por ejemplo, mensajes de error, o de éxito de las operaciones. -->
+        </section>
         <section id="sec-contenido">
             <!--Seccion para contenido de la página-->
+            <button>+AGREGAR A INFORME</button>
         </section>
     </main>
     <!--Pie de página-->
