@@ -11,45 +11,189 @@
 </head>
 
 <body>
-    <header>
-        <!--Barra de logo portal-->
-        <div class="header-page">
-            <a href="index.html">
-                <img src="img/Logo_DINE_negativo.png" alt="logo" class="logo">
-            </a>
-        </div>
-        <!--Barra de menú principal-->
-        <ul>
-            <li><a class="active" href="informes.html">Informes</a></li>
 
-        </ul>
-    </header>
-    <!-- Contenido principal de la página -->
-    <main>
-        <section id="sec-titulo">
-            <!--Seccion para agregar una palicula favorita por codigo-->
-            <h2>Titulo de Sección</h2>
-            <p>Párrafo o subtítulo</p>
-            <div>Imagen</div>
-        </section>
-        <section id="sec-contenido">
-            <!--Seccion para contenido de la página-->
-        </section>
-    </main>
-    <!--Pie de página-->
-    <footer>
-        <div>
-            <img src="img/icons/Ministerio-del-Interior_pluma.1ab9a7a7.png" />
-            <img src="img/icons/Logo_DINE_negativo.a88f983e.png" />
-            <img src="img/icons/logos_001-10.4430c8d5.png" />
-            <p>Resultados Provisorios en base a telegramas recibidos (Art. 43 Ley 26571 y Art. 105 Ley 19945). Los
-                porcentajes de las agrupaciones políticas son calculados sobre los votos válidos (PASO) conforme al art.
-                45 Ley 26.571 y afirmativos (Generales). No se incluyen los votos correspondientes a los electores
-                residentes en el exterior ni privados de la libertad. Al usar este sitio usted acepta los
-                <a href="about:blank" target="_blank">Términos y Condiciones.</a>
-            </p>
-        </div>
-    </footer>
+    <body>
+        <header>
+            <!--Barra de logo portal-->
+            <div class="header-page">
+                <a href="index.html">
+                    <img src="img/Logo_DINE_negativo.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <!--Barra de menú principal-->
+            <form>
+                <select name="filtro-año" id="años">
+                    <option selected disabled>Año</option>
+                </select>
+                <select name="filtro-cargo" id="cargos">
+                    <option selected disabled>Cargo</option>
+                </select>
+                <select name="filtro-distrito" id="distritos">
+                    <option selected disabled>Distrito</option>
+                </select>
+                <button type="submit"><img src="img/icons/icons8-lupa.svg">FILTRAR</button>
+            </form>
+            <ul>
+                <li><a class="active" href="informes.html">INFORMES</a></li>
+                <li><a class="active" href="index.html">INICIO</a></li>
+            </ul>
+        </header>
+        <!-- Contenido principal de la página -->
+        <main>
+            <section id="sec-titulo">
+                <!--Seccion para agregar una palicula favorita por codigo-->
+                <h2>Elecciones 2021 | PASO</h2>
+                <p>2021 > PASO > Provisorio > Senadores/as nacionales > Corrientes</p>
+            </section>
+            <section id="sec-messages">
+                <!-- agregar mensajes al usuario, por ejemplo, mensajes de error, o de éxito de las operaciones. -->
+            </section>
+            <section id="sec-contenido">
+                <!--Seccion para contenido de la página-->
+                <div>
+                    <button>+AGREGAR A INFORME</button>
+                    <div class="recuadros-informativos">
+                        <div class="recuadro recuadro_1">
+                            <div class="icono">
+                                <img src="img/icons/urna.svg" alt="">
+                            </div>
+                            <div class="informacion">
+                                <p>Mesas computadas</p>
+                                <p>2,586</p>
+                            </div>
+                        </div>
+                        <div class="recuadro recuadro_2">
+                            <div class="icono">
+                                <img src="img/icons/electores.svg" alt="">
+                            </div>
+                            <div class="informacion">
+                                <p>Electores</p>
+                                <p>876,580</p>
+                            </div>
+                        </div>
+                        <div class="recuadro recuadro_3">
+                            <div class="icono">
+                                <img src="img/icons/participacion.svg" alt="">
+                            </div>
+                            <div class="informacion">
+                                <p>Participación sobre escrutado</p>
+                                <p>65,5%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <h3>Agrupaciones políticas</h3>
+                        <div class="contenedor-agrupaciones">
+                            <div class="agrupacion">
+                                <div>
+                                    <p>ECO + VAMOS<br>CORRIENTES</p>
+                                </div>
+                                <div>
+                                    <p>58.98%</p>
+                                    <p>320.878 votos</p>
+                                </div>
+                                <div class="barra-votos">
+
+                                </div>
+                            </div>
+                            <div class="agrupacion">
+                                <div>
+                                    <p>FRENTE DE TODOS</p>
+                                </div>
+                                <div>
+                                    <p>26.54%</p>
+                                    <p>196.772 votos</p>
+                                </div>
+                                <div class="barra-votos">
+
+                                </div>
+                            </div>
+                            <div class="agrupacion">
+                                <div>
+                                    <p>VAMOS CON VOS</p>
+                                </div>
+                                <div>
+                                    <p>2.51%</p>
+                                    <p>13,632 votos</p>
+                                </div>
+                                <div class="barra-votos">
+
+                                </div>
+                            </div>
+                            <div class="agrupacion">
+                                <div>
+                                    <p>COMPROMISO FEDERAL</p>
+                                </div>
+                                <div>
+                                    <p>1,98%</p>
+                                    <p>10,750 votos</p>
+                                </div>
+                                <div class="barra-votos">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="contenedor-imagen-mapa">
+                            <img src="img/mapas/corrientes.svg">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Resumen de votos</h3>
+                        <p>100%</p>
+                        <div class="grafico">
+                            <div class="bar" style="--bar-value:85%;" data-name="Partido 1" title="Your Blog 
+                            85%"></div>
+                            <div class="bar" style="--bar-value:23%;" data-name="Partido 2" title="Medium 
+                            23%"></div>
+                            <div class="bar" style="--bar-value:7%;" data-name="Partido 3" title="Tumblr 
+                            7%"></div>
+                            <div class="bar" style="--bar-value:38%;" data-name="Partido 4" title="Facebook 
+                            38%"></div>
+                            <div class="bar" style="--bar-value:35%;" data-name="Partido 5" title="YouTube 
+                            35%"></div>
+                            <div class="bar" style="--bar-value:30%;" data-name="Partido 6" title="LinkedIn 
+                            30%"></div>
+                            <div class="bar" style="--bar-value:5%;" data-name="Partido 7" title="Twitter 
+                            5%"></div>
+                            <div class="bar" style="--bar-value:20%;" data-name="Otros" title="Other 
+                            20%"></div>
+                        </div>
+                        <div class="referencias-grafico">
+                            <div>
+                                <p>Positivos</p>
+                                <p>En blanco</p>
+                                <p>Votos nulos</p>
+                            </div>
+                            <div>
+                                <p>Votos recurridos, impugnados y </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--Pie de página-->
+        <footer>
+            <div>
+                <img src="img/icons/Ministerio-del-Interior_pluma.1ab9a7a7.png" />
+                <img src="img/icons/Logo_DINE_negativo.a88f983e.png" />
+                <img src="img/icons/logos_001-10.4430c8d5.png" />
+                <p>Resultados Provisorios en base a telegramas recibidos (Art. 43 Ley 26571 y Art. 105 Ley 19945). Los
+                    porcentajes de las agrupaciones políticas son calculados sobre los votos válidos (PASO) conforme al
+                    art.
+                    45 Ley 26.571 y afirmativos (Generales). No se incluyen los votos correspondientes a los electores
+                    residentes en el exterior ni privados de la libertad. Al usar este sitio usted acepta los
+                    <a href="about:blank" target="_blank">Términos y Condiciones.</a>
+                </p>
+            </div>
+        </footer>
+    </body>
 </body>
 
 </html>
