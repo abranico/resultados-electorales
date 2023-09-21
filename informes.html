@@ -7,7 +7,9 @@
     <title>Sistema de Publicación de Resultados Electorales</title>
     <link rel="shortcut icon" type="image/png" href="img/icons/favicon-16x16.png">
     <!-- Estilos CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/pages/informes.css">
 </head>
 
 <body>
@@ -19,18 +21,37 @@
             </a>
         </div>
         <!--Barra de menú principal-->
-        <ul>
-            <li>Consultar</li>
-            <li><a href="paso.html">PASO</a></li>
-            <li><a href="generales.html">GENERALES</a></li>
-            <li><a href="index.html">INICIO</a></li>
-        </ul>
+        <nav class="barra-navegacion">
+            <ul>
+                <li>CONSULTAR:</li>
+                <li><a class="boton paso" href="paso.html">PASO</a></li>
+                <li><a class="boton generales" href="generales.html">GENERALES</a></li>
+                <li><a class="boton_inicio" href="index.html">INICIO</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- Contenido principal de la página -->
     <main>
+
+        <section id="sec-messages">
+            <!-- agregar mensajes al usuario, por ejemplo, mensajes de error, o de éxito de las operaciones. -->
+            <div class="container">
+                <div class="mensaje mensaje-1"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Se agregó con éxito
+                    el
+                    resultado al informe.
+                </div>
+                <div class="mensaje mensaje-2"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Error: Se
+                    produjo un
+                    error al
+                    intentar agregar resultados al informe.</div>
+                <div class="mensaje mensaje-3"><i class="fa fa-exclamation" aria-hidden="true"></i> La operación no se
+                    pudo
+                    completar.</div>
+            </div>
+        </section>
         <section id="sec-titulo">
             <!--Seccion para agregar una palicula favorita por codigo-->
-            <h2>Reporte de Elecciones</h2>
+            <h1>Reporte de Elecciones</h1>
         </section>
         <section id="sec-contenido">
             <table>
@@ -44,11 +65,20 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img class="mapa-provincia" src="img/mapas/cordoba.svg"></td>
-                        <td>
-                            <p>Elecciones 2021 | Generales</p>
-                            <p>2021 <span>></span> Generales <span>></span> Provisorio <span>></span> Diputados/as
-                                Nacionales <span>> Buenos aires</span> </p>
+                        <td class="contenedor_mapa">
+                            <svg class="mapa">
+                                <path class="leaflet-interactive" stroke="#18a0fb" stroke-opacity="1" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" fill="#18a0fb" fill-opacity="1"
+                                    fill-rule="evenodd"
+                                    d="M125 101L127 108L125 110L126 111L122 123L120 125L121 174L160 174L160 157L172 157L197 120L197 114L193 110L195 109L194 105L191 99L189 98L186 84L190 80L196 57L189 52L188 48L180 48L180 42L174 35L159 33L159 30L153 30L151 28L147 29L147 27L139 26L125 28L126 37L121 41L114 42L112 52L106 66L106 89L117 94L119 101z">
+                                </path>
+                            </svg>
+
+                        </td>
+                        <td class="columna_elecciones">
+                            <p class="texto-elecciones-chico">Elecciones 2020 | Generales</p>
+                            <p class="texto-path-chico">2020 > Generales > Provisorio > Senadores
+                                Nacionales > Buenos Aires</p>
                         </td>
                         <td>
                             <div class="recuadros-informativos">
@@ -57,8 +87,8 @@
                                         <img src="img/icons/urna.svg" alt="">
                                     </div>
                                     <div class="informacion">
-                                        <p>Mesas computadas</p>
-                                        <p>36,245</p>
+                                        <p class="informacion_titulo">Mesas computadas</p>
+                                        <p>2,586%</p>
                                     </div>
                                 </div>
                                 <div class="recuadro recuadro_2">
@@ -66,8 +96,8 @@
                                         <img src="img/icons/electores.svg" alt="">
                                     </div>
                                     <div class="informacion">
-                                        <p>Electores</p>
-                                        <p>12,530,612</p>
+                                        <p class="informacion_titulo">Electores</p>
+                                        <p>876,580</p>
                                     </div>
                                 </div>
                                 <div class="recuadro recuadro_3">
@@ -75,83 +105,27 @@
                                         <img src="img/icons/participacion.svg" alt="">
                                     </div>
                                     <div class="informacion">
-                                        <p>Participación sobre escrutado</p>
-                                        <p>72,89%</p>
+                                        <p class="informacion_titulo">Participación sobre escrutado</p>
+                                        <p>65,5%</p>
                                     </div>
                                 </div>
                             </div>
                         </td>
-                        <td>
-                            <div>
-                                <p>JUNTOS</p>
-                                <p>39.81%</p>
-                                <p>3,480,298 votos</p>
-                            </div>
-                            <div>
-                                <p>FRENTE VAMOS CON VOS</p>
-                                <p>4.37%</p>
-                                <p>382,445 votos</p>
-                            </div>
-                            <div>
-                                <p>AVANZA LIBERTAD</p>
-                                <p>7.51%</p>
-                                <p>656,498 votos</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img class="mapa-provincia" src="img/mapas/cordoba.svg"></td>
-                        <td>
-                            <p>Elecciones 2021 | PASO</p>
-                            <p>2021 <span>></span> Generales <span>></span> Provisorio <span>></span> Diputados/as
-                                Nacionales <span>> Córdoba</span> </p>
-                        </td>
-                        <td>
-                            <div class="recuadros-informativos">
-                                <div class="recuadro recuadro_1">
-                                    <div class="icono">
-                                        <img src="img/icons/urna.svg" alt="">
-                                    </div>
-                                    <div class="informacion">
-                                        <p>Mesas computadas</p>
-                                        <p>8,814</p>
-                                    </div>
+                        <td class="contenedor_agrupacion">
+                            <div class="datos_agrupacion">
+                                <p class="agrupacion_nombre">JUNTOS</p>
+                                <div>
+                                    <p>39.81%</p>
+                                    <p>3,480,298 votos</p>
                                 </div>
-                                <div class="recuadro recuadro_2">
-                                    <div class="icono">
-                                        <img src="img/icons/electores.svg" alt="">
-                                    </div>
-                                    <div class="informacion">
-                                        <p>Electores</p>
-                                        <p>2,996,378</p>
-                                    </div>
+
+                            </div>
+                            <div class="datos_agrupacion">
+                                <p class="agrupacion_nombre">PJ</p>
+                                <div>
+                                    <p>20%</p>
+                                    <p>12000 votos</p>
                                 </div>
-                                <div class="recuadro recuadro_3">
-                                    <div class="icono">
-                                        <img src="img/icons/participacion.svg" alt="">
-                                    </div>
-                                    <div class="informacion">
-                                        <p>Participación sobre escrutado</p>
-                                        <p>63,16%</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>FRENTE DE TODOS</p>
-                                <p>38.53%</p>
-                                <p>3,658,310 votos</p>
-                            </div>
-                            <div>
-                                <p>FRENTE DE IZQUIERDA Y DE TRABAJADORES -</p>
-                                <p>6.83%</p>
-                                <p>596,723 votos</p>
-                            </div>
-                            <div>
-                                <p>JUNTOS</p>
-                                <p>39.81%</p>
-                                <p>3,480,298 votos</p>
                             </div>
                         </td>
                     </tr>

@@ -1,0 +1,210 @@
+.paso {
+    background-color: var(--magenta);
+}
+
+.generales {
+    background-color: var(--celeste);
+
+}
+
+.boton {
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFF;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.boton:hover {
+    background-color: var(--gris-claro);
+}
+
+.informes {
+    border-radius: 15px;
+    padding: 5px;
+    color: #FFF;
+    font-size: 10px;
+    border: solid white 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.informes:hover {
+    background-color: var(--gris-claro);
+
+}
+
+.boton_inicio {
+    background-color: var(--gris-claro);
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFF;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.mensaje {
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: #FFffFF;
+    font-size: 12px;
+    font-weight: 200px;
+    text-align: center;
+
+}
+
+.fa {
+    font-size: 20px;
+}
+
+.mensaje-1 {
+    background-color: var(--mensaje-usuario-verde);
+}
+
+.mensaje-2 {
+    background-color: var(--mensaje-usuario-rojo);
+}
+
+.mensaje-3 {
+
+    background-color: var(--mensaje-usuario-amarillo);
+}
+
+
+table {
+    border: solid 1px black;
+}
+
+img {
+    width: 50px;
+}
+
+.recuadros-informativos {
+    display: flex;
+    justify-content: center;
+}
+
+.informacion_titulo {
+    font-weight: bold;
+}
+
+.recuadro {
+
+    border-radius: 5px;
+    margin: 2px;
+    height: 70px;
+    width: 120px;
+    padding: 0.5rem 1rem;
+    color: #FFF;
+    font-size: 12px;
+    display: flex;
+}
+
+.recuadro_1 {
+    background-color: var(--celeste);
+}
+
+.recuadro_2 {
+    background-color: var(--magenta);
+}
+
+.recuadro_3 {
+    background-color: var(--morado);
+}
+
+.informacion p {
+    color: #FFF;
+}
+
+.icono img {
+    height: 50px;
+    width: 50px;
+}
+
+table {
+    width: 1024px;
+
+    margin: 0 auto 50px auto;
+    border-radius: 15px;
+    border: 1px solid var(--borde-Grilla);
+    border-collapse: collapse;
+    background-color: rgb(250, 250, 250);
+}
+
+table thead {
+    text-align: center;
+    color: var(--titulo-Grilla);
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--borde-inferior-Grilla);
+}
+
+
+
+table tbody td {
+    border-bottom: 1px solid var(--borde-inferior-Grilla);
+    padding: 15px 0;
+    font-size: 12px;
+
+    vertical-align: top;
+
+}
+
+tbody tr:hover {
+    background-color: lightgray;
+    cursor: pointer;
+    z-index: 10;
+}
+
+table svg {
+    height: 200px;
+}
+
+.columna_elecciones {
+    padding: 25px;
+    text-align: start;
+}
+
+.texto-elecciones-chico {
+    font-size: 12px;
+    color: var(--textos);
+    font-weight: bold;
+}
+
+.texto-path-chico {
+    font-size: 11px;
+    color: var(--celeste);
+}
+
+.contenedor_agrupacion {
+    width: 100%;
+    height: 325px;
+    overflow-y: scroll;
+    padding: 5px;
+    color: var(--textos);
+}
+
+
+.datos_agrupacion {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.agrupacion_nombre {
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.datos_agrupacion p {
+    font-size: 12px;
+    margin: 5px;
+}

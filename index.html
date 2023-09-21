@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="img/icons/favicon-16x16.png">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/pages/index.css">
 </head>
 
 <body>
@@ -19,9 +20,14 @@
             </a>
         </div>
         <!--Barra de menú principal-->
-        <ul>
-            <li><a class="active" href="informes.html">Informes</a></li>
-        </ul>
+        <nav class="barra-navegacion">
+            <ul>
+                <li>CONSULTAR:</li>
+                <li><a class="boton paso" href="paso.html">PASO</a></li>
+                <li><a class="boton generales" href="generales.html">GENERALES</a></li>
+                <li><a class="informes active" href="informes.html">INFORMES</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- Contenido principal de la página -->
     <main>
@@ -32,20 +38,22 @@
                 del Interior ponen a disposición una herramienta de búsqueda avanzada y generación
                 de informes personalizados con los resultados provisionales de las elecciones
                 desarrolladas en los últimos años.
+                <br>
                 Los resultados que se presentan son los correspondientes a escrutinios provisorios de
                 elecciones nacionales. Dicho recuento es responsabilidad de la DINE. También se
                 presentan los resultados provisionales de las elecciones provinciales y/o locales
-                realizados bajo la adhesión a ley de simultaneidad.</p>
+                realizados bajo la adhesión a ley de simultaneidad.
+            </p>
             <div><img src="img/images.png" alt=""></div>
         </section>
         <section id="sec-contenido">
             <h3>Elecciones 2021</h3>
-            <p>Resultados Provisorios</p>
-            <a href="paso.html">
-                <img src="img/icons/urna.svg" alt="">PASO
+            <p>Seleccione el tipo de elección que quiere consultar</p>
+            <a class="contenido-boton paso" href="paso.html">
+                <img class="boton_imagen" src="img/icons/urna.svg" alt="">PASO
             </a>
-            <a href="generales.html">
-                <img src="img/icons/urna.svg" alt="">Generales
+            <a class="contenido-boton generales" href="generales.html">
+                <img class="boton_imagen" src="img/icons/urna.svg" alt="">Generales
             </a>
         </section>
     </main>

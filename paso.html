@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="img/icons/favicon-16x16.png">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/pages/paso.css">
 </head>
 
 <body>
@@ -21,22 +22,24 @@
                 </a>
             </div>
             <!--Barra de menú principal-->
-            <form>
-                <select name="filtro-año" id="años">
-                    <option selected disabled>Año</option>
-                </select>
-                <select name="filtro-cargo" id="cargos">
-                    <option selected disabled>Cargo</option>
-                </select>
-                <select name="filtro-distrito" id="distritos">
-                    <option selected disabled>Distrito</option>
-                </select>
-                <button type="submit"><img src="img/icons/icons8-lupa.svg">FILTRAR</button>
-            </form>
-            <ul>
-                <li><a class="active" href="informes.html">INFORMES</a></li>
-                <li><a class="active" href="index.html">INICIO</a></li>
-            </ul>
+            <nav class="barra-navegacion">
+                <form>
+                    <select name="filtro-año" id="años">
+                        <option selected disabled>Año</option>
+                    </select>
+                    <select name="filtro-cargo" id="cargos">
+                        <option selected disabled>Cargo</option>
+                    </select>
+                    <select name="filtro-distrito" id="distritos">
+                        <option selected disabled>Distrito</option>
+                    </select>
+                    <button type="submit"><img src="img/icons/icons8-lupa.svg">FILTRAR</button>
+                </form>
+                <ul>
+                    <li><a class="active" href="informes.html">INFORMES</a></li>
+                    <li><a class="active" href="index.html">INICIO</a></li>
+                </ul>
+            </nav>
         </header>
         <!-- Contenido principal de la página -->
         <main>

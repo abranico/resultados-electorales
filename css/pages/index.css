@@ -1,0 +1,55 @@
+.paso{
+    background-color: var(--magenta);
+}
+.generales{
+    background-color: var(--celeste);
+
+}
+.boton{
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFF;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.boton:hover{
+    background-color: var(--gris-claro);
+}
+.informes{
+    border-radius: 15px;
+    padding: 5px;
+    color: #FFF;
+    font-size: 10px;
+    border: solid white 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.informes:hover{
+    background-color: var(--gris-claro);
+
+}
+
+#sec-titulo{
+    margin: 15px;
+    width: 350px;
+}
+
+#sec-contenido{
+    text-align: center;
+}
+
+.contenido-boton{
+    border-radius: 10px;
+    margin: 25px;
+    height: 100px;
+    width: 400px;
+    padding: 1rem;
+    color: #FFF;
+    font-size: 28px;
+    text-align: center;
+}
+.contenido-boton img{
+    height: 40px;
+    width: 40px;
+}
