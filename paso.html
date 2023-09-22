@@ -7,6 +7,7 @@
     <title>Sistema de Publicación de Resultados Electorales</title>
     <link rel="shortcut icon" type="image/png" href="img/icons/favicon-16x16.png">
     <!-- Estilos CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/pages/paso.css">
 </head>
@@ -22,24 +23,29 @@
                 </a>
             </div>
             <!--Barra de menú principal-->
+
             <nav class="barra-navegacion">
-                <form>
-                    <select name="filtro-año" id="años">
-                        <option selected disabled>Año</option>
-                    </select>
-                    <select name="filtro-cargo" id="cargos">
-                        <option selected disabled>Cargo</option>
-                    </select>
-                    <select name="filtro-distrito" id="distritos">
-                        <option selected disabled>Distrito</option>
-                    </select>
-                    <button type="submit"><img src="img/icons/icons8-lupa.svg">FILTRAR</button>
-                </form>
-                <ul>
-                    <li><a class="active" href="informes.html">INFORMES</a></li>
-                    <li><a class="active" href="index.html">INICIO</a></li>
-                </ul>
+                <div>
+                    <form>
+                        <select name="filtro-año" id="años">
+                            <option selected disabled>Año</option>
+                        </select>
+                        <select name="filtro-cargo" id="cargos">
+                            <option selected disabled>Cargo</option>
+                        </select>
+                        <select name="filtro-distrito" id="distritos">
+                            <option selected disabled>Distrito</option>
+                        </select>
+                        <button class="boton_filtrar" type="submit"><i class="fa fa-search icon_boton_filtrar"
+                                aria-hidden="true"></i>FILTRAR</button>
+                    </form>
+                    <ul>
+                        <li><a class="boton_informes" href="informes.html">INFORMES</a></li>
+                        <li><a class="boton_inicio" href="index.html">INICIO</a></li>
+                    </ul>
+                </div>
             </nav>
+
         </header>
         <!-- Contenido principal de la página -->
         <main>

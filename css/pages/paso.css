@@ -1,0 +1,53 @@
+/*----------- Barra de menú ----------- */
+
+.barra-navegacion div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.barra-navegacion div form {
+    padding-left: 50px;
+}
+
+.barra-navegacion div form select {
+    margin-right: 15px;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    color: var(--celeste);
+    font-weight: bold;
+
+}
+
+.boton_filtrar {
+    background-color: white;
+    border-radius: 20px;
+    padding: 4px 23px;
+    color: var(--textos);
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+
+}
+
+.icon_boton_filtrar {
+    padding: 5px;
+    font-size: 13px !important;
+}
+
+.boton_inicio {
+    background-color: var(--gris-claro);
+    border-radius: 5px;
+    padding: 10px 30px;
+    border: none;
+
+}
+
+.boton_inicio:hover {
+    color: var(--textos);
+}
