@@ -87,6 +87,7 @@
 
 .boton_agregar_informe:hover {
     color: var(--textos);
+    cursor: pointer;
 }
 
 .recuadros-informativos {
