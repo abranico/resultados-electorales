@@ -10,58 +10,82 @@ html,
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   background-color: rgb(240, 240, 240);
+
 }
 
-p{
+p {
   font-size: 12px;
   color: var(--textos);
-  
+
 }
 
-h1{
+h1 {
   font-size: 26px;
   color: var(--titulos);
   padding-bottom: 20px;
 }
 
-h2{
+h2 {
   font-size: 22px;
   color: var(--titulos);
 
 }
 
-h3{
+h3 {
   font-size: 18px;
   color: var(--titulos);
 
 }
 
-.header-page{
-  padding:  0.5em;
+.header-page {
+  padding: 0.5em;
   background-color: var(--fondo-Cabecera);
   color: white;
-  width: 90%;
-  margin: 0 auto auto auto;
+
+
 }
 
-.header-page img{
+.header-page a img {
   width: 150px;
+
 }
 
-.barra-navegacion{
-  margin-left: 13px;
-  margin-right: 13px;
+.barra-navegacion {
   padding-top: 20px;
   background-color: var(--fondo-Menu);
-  width: 100%;
+
 }
 
-footer{
+header {
+  padding: 0;
+  margin: 0;
+
+}
+
+footer {
   background-color: var(--fondo-Footer);
   color: var(--texto-footer);
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem;
+
+
 }
 
-footer img{
+footer p,
+footer a {
+  color: var(--texto-footer);
+  text-decoration: none;
+  line-height: 2.5;
+  width: 50%;
+}
+
+
+footer img {
   height: 40px;
+
 }
