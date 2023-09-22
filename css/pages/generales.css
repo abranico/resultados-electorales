@@ -30,7 +30,7 @@
     color: var(--textos);
     text-transform: uppercase;
     text-align: center;
-    vertical-align: middle;
+
     border: none;
 
 }
@@ -53,34 +53,7 @@
 }
 
 
-.mensaje {
-    width: 400px;
-    margin: 20px auto;
-    padding: 15px;
-    border-radius: 10px;
-    color: #FFffFF;
-    font-size: 12px;
-    font-weight: 200px;
-    text-align: center;
 
-}
-
-.fa {
-    font-size: 20px;
-}
-
-.mensaje-1 {
-    background-color: var(--mensaje-usuario-verde);
-}
-
-.mensaje-2 {
-    background-color: var(--mensaje-usuario-rojo);
-}
-
-.mensaje-3 {
-
-    background-color: var(--mensaje-usuario-amarillo);
-}
 
 .texto-path {
     font-size: 14px;

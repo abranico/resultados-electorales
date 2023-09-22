@@ -39,23 +39,14 @@ h3 {
 
 }
 
-.paso {
-  background-color: var(--magenta);
-}
 
-.generales {
-  background-color: var(--celeste);
-}
 
 /*----------- Barra de logo ----------- */
 
 .header-page {
   padding: 0.5em 50px;
   background-color: var(--fondo-Cabecera);
-
 }
-
-.header-page a {}
 
 .header-page a img {
   width: 150px;
@@ -67,26 +58,21 @@ h3 {
   padding: 20px 0 20px 0;
   background-color: var(--fondo-Menu);
   color: white;
-
 }
 
 .barra-navegacion ul {
   list-style: none;
   display: flex;
-
   align-items: center;
   padding: 0 50px 0 50px;
   font-size: 13px;
-
-
 }
-
 
 .barra-navegacion ul li {
   margin-right: 15px;
-
 }
 
+/*----------- Pie de página ----------- */
 
 footer {
   background-color: var(--fondo-Footer);
@@ -96,8 +82,6 @@ footer {
   justify-content: space-around;
   align-items: center;
   padding: 1.5rem;
-
-
 }
 
 footer p,
@@ -108,11 +92,11 @@ footer a {
   width: 50%;
 }
 
-
 footer img {
   height: 40px;
-
 }
+
+/*----------- Botones ----------- */
 
 .boton {
   border-radius: 5px;
@@ -154,5 +138,43 @@ footer img {
 
 .boton_inicio:hover {
   background-color: var(--gris-claro);
+}
 
+.paso {
+  background-color: var(--magenta);
+}
+
+.generales {
+  background-color: var(--celeste);
+}
+
+/*----------- Mensajes ----------- */
+
+.mensaje {
+  width: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  color: #FFffFF;
+  font-size: 12px;
+  font-weight: 200px;
+  text-align: center;
+
+}
+
+.fa {
+  font-size: 20px;
+}
+
+.mensaje-1 {
+  background-color: var(--mensaje-usuario-verde);
+}
+
+.mensaje-2 {
+  background-color: var(--mensaje-usuario-rojo);
+}
+
+.mensaje-3 {
+
+  background-color: var(--mensaje-usuario-amarillo);
 }
