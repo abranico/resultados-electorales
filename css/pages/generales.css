@@ -14,11 +14,13 @@
     margin-right: 15px;
     background-color: transparent;
     border: none;
+    outline: none;
     font-size: 14px;
     height: 30px;
     color: var(--celeste);
     font-weight: bold;
 }
+
 
 .boton_filtrar {
     background-color: white;

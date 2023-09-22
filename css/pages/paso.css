@@ -4,8 +4,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 .barra-navegacion div form {
@@ -20,7 +18,6 @@
     height: 30px;
     color: var(--celeste);
     font-weight: bold;
-
 }
 
 .boton_filtrar {
@@ -31,7 +28,6 @@
     text-transform: uppercase;
     text-align: center;
     border: none;
-
 }
 
 .icon_boton_filtrar {
@@ -44,33 +40,54 @@
     border-radius: 5px;
     padding: 10px 30px;
     border: none;
-
 }
 
 .boton_inicio:hover {
     color: var(--textos);
 }
 
-/* _______ */
+/*----------- Seccion del Titulo -----------*/
+
+#sec-titulo {
+    max-width: 100%;
+    padding: 50px;
+}
 
 .texto-path {
     font-size: 14px;
     color: var(--celeste);
 }
 
+/*----------- Seccion del Contenido -----------*/
+
+
+
+#sec-contenido {
+    max-width: 100%;
+    padding: 50px;
+}
+
+.sec-contenido_contenedor-nuevoinforme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 .boton_agregar_informe {
     background-color: var(--gris-claro);
     color: white;
-    font-size: 10px;
+    padding: 15px 45px;
     text-align: center;
-    padding: 5px;
+    height: 100%;
     border-radius: 5px;
     text-transform: uppercase;
-
+    border: none;
 }
 
 .boton_agregar_informe:hover {
     color: var(--textos);
+    cursor: pointer;
 }
 
 .recuadros-informativos {
@@ -78,8 +95,32 @@
     justify-content: center;
 }
 
+/* RECUADROS */
+
 .informacion_titulo {
     font-weight: bold;
+}
+
+#recuadros_estadisticas {
+    display: flex;
+
+}
+
+.contenedor-seccion-estadisticas {
+    border-radius: 25px;
+    padding: 15px;
+    border: 1px var(--borde-Grilla) solid;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    height: 420px;
+    width: 100%;
+
+}
+
+
+.distrito {
+    width: 30%;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .recuadro {
@@ -115,15 +156,7 @@
 }
 
 
-.contenedor-seccion-estadisticas {
-    border-radius: 25px;
-    border: 1px var(--borde-Grilla) solid;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    height: 420px;
-    padding: 5px;
-    width: 100%;
-    margin: 10px;
-}
+
 
 .contenedor-agrupaciones {
     overflow-y: scroll;
@@ -165,6 +198,7 @@ h3 {
 
 .partido_titulo {
     flex-grow: 1;
+    font-size: 10px;
 }
 
 /*barra de progreso*/
@@ -190,9 +224,7 @@ h3 {
     font-size: 9px;
 }
 
-.distrito {
-    width: 50%;
-}
+
 
 .contenedor-mapa {
     display: flex;
@@ -202,7 +234,7 @@ h3 {
 }
 
 .mapa {
-    height: 100vh;
+    height: 100%;
 }
 
 .mapa path {

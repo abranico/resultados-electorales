@@ -167,6 +167,7 @@ footer img {
 
 .mensaje-1 {
   background-color: var(--mensaje-usuario-verde);
+  margin-top: 50px;
 }
 
 .mensaje-2 {
