@@ -54,7 +54,7 @@ h3 {
 /*----------- Barra de menú ----------- */
 
 .barra-navegacion {
-  padding: 20px 0 20px 0;
+  padding: 2px 0 2px 0;
   background-color: var(--fondo-Menu);
   color: white;
 }
@@ -99,11 +99,13 @@ footer img {
 
 .boton {
   border-radius: 5px;
-  padding: 10px 25px;
+  padding: 8px 15px;
   color: #FFF;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  display: inline-block;
+  width: 100px;
 }
 
 .boton:hover {
@@ -112,12 +114,14 @@ footer img {
 
 .boton_informes {
   border-radius: 15px;
-  padding: 10px 25px;
+  padding: 8px 15px;
   color: #FFF;
   border: solid white 1px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  display: inline-block;
+  width: 100px;
 }
 
 .boton_informes:hover {
@@ -126,18 +130,23 @@ footer img {
 }
 
 .boton_inicio {
-  border-radius: 15px;
-  padding: 10px 25px;
+  border-radius: 5px;
+  padding: 8px 15px;
   color: #FFF;
-  border: solid white 1px;
+  border: none;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  display: inline-block;
+  width: 100px;
+
+  background-color: var(--gris-claro);
 }
 
 .boton_inicio:hover {
-  background-color: var(--gris-claro);
+  color: var(--textos);
 }
+
 
 .paso {
   background-color: var(--magenta);
