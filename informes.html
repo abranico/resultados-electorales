@@ -10,9 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/pages/informes.css">
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/informes.js" defer></script>
 </head>
 
 <body>
+    <div class="loader-contenedor" id="loader">
+        <div class="loader"></div>
+    </div>
     <header>
         <!--Barra de logo portal-->
         <div class="header-page">
@@ -38,17 +43,12 @@
         <section id="sec-messages">
             <!-- agregar mensajes al usuario, por ejemplo, mensajes de error, o de éxito de las operaciones. -->
             <div class="container">
-                <div class="mensaje mensaje-1"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Se agregó con éxito
-                    el
-                    resultado al informe.
+                <div class="mensaje mensaje-2" id="mensajeError">
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> ERROR:
                 </div>
-                <div class="mensaje mensaje-2"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Error: Se
-                    produjo un
-                    error al
-                    intentar agregar resultados al informe.</div>
-                <div class="mensaje mensaje-3"><i class="fa fa-exclamation" aria-hidden="true"></i> La operación no se
-                    pudo
-                    completar.</div>
+                <div class="mensaje mensaje-3" id="mensajeAdvertencia">
+                    <i class="fa fa-exclamation" aria-hidden="true"></i> No hay informes guardados para mostrar
+                </div>
             </div>
         </section>
         <section id="sec-titulo">
@@ -65,113 +65,26 @@
                         <th>DATOS POR AGRUPACIÓN</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="contenedorInformes">
                     <tr>
                         <td class="contenedor_mapa">
-                            <svg class="mapa">
-                                <path class="leaflet-interactive" stroke="#18a0fb" stroke-opacity="1" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" fill="#18a0fb" fill-opacity="1"
-                                    fill-rule="evenodd"
-                                    d="M125 101L127 108L125 110L126 111L122 123L120 125L121 174L160 174L160 157L172 157L197 120L197 114L193 110L195 109L194 105L191 99L189 98L186 84L190 80L196 57L189 52L188 48L180 48L180 42L174 35L159 33L159 30L153 30L151 28L147 29L147 27L139 26L125 28L126 37L121 41L114 42L112 52L106 66L106 89L117 94L119 101z">
-                                </path>
+                            <svg class="mapa" id="svgMapa">
+
                             </svg>
 
                         </td>
                         <td class="columna_elecciones">
-                            <p class="texto-elecciones-chico">Elecciones 2020 | Generales</p>
-                            <p class="texto-path-chico">2020 ><br> Generales ><br> Provisorio ><br> Senadores
-                                Nacionales ><br> Buenos Aires</p>
+                            <p class="texto-elecciones-chico" id="titulo"></p>
+                            <p class="texto-path-chico" id="subtitulo"></p>
                         </td>
                         <td class="datos_generales">
-                            <div class="recuadros-informativos">
-                                <div class="recuadro recuadro_1">
-                                    <div class="icono">
-                                        <img src="img/icons/urna.svg" alt="">
-                                    </div>
-                                    <div class="informacion">
-                                        <p class="informacion_titulo">Mesas computadas</p>
-                                        <p>2,586%</p>
-                                    </div>
-                                </div>
-                                <div class="recuadro recuadro_2">
-                                    <div class="icono">
-                                        <img src="img/icons/electores.svg" alt="">
-                                    </div>
-                                    <div class="informacion">
-                                        <p class="informacion_titulo">Electores</p>
-                                        <p>876,580</p>
-                                    </div>
-                                </div>
-                                <div class="recuadro recuadro_3">
-                                    <div class="icono">
-                                        <img src="img/icons/participacion.svg" alt="">
-                                    </div>
-                                    <div class="informacion">
-                                        <p class="informacion_titulo">Participación sobre escrutado</p>
-                                        <p>65,5%</p>
-                                    </div>
-                                </div>
+                            <div class="recuadros-informativos" id="contenedorRecuadros">
+
                             </div>
                         </td>
                         <td class="contenedor_agrupacion">
-                            <div class="contenedor-datos-agrupacion">
-                                <div class="datos_agrupacion">
-                                    <p class="agrupacion_nombre">JUNTOS</p>
-                                    <div>
-                                        <p>39.81%</p>
-                                        <p>3,480,298 votos</p>
-                                    </div>
+                            <div class="contenedor-datos-agrupacion" id="contenedorDatosAgrupacion">
 
-                                </div>
-                                <div class="datos_agrupacion">
-                                    <p class="agrupacion_nombre">PJ</p>
-                                    <div>
-                                        <p>20%</p>
-                                        <p>12000 votos</p>
-                                    </div>
-                                </div>
-                                <div class="datos_agrupacion">
-                                    <p class="agrupacion_nombre">PJ</p>
-                                    <div>
-                                        <p>20%</p>
-                                        <p>12000 votos</p>
-                                    </div>
-                                </div>
-                                <div class="datos_agrupacion">
-                                    <p class="agrupacion_nombre">PJ</p>
-                                    <div>
-                                        <p>20%</p>
-                                        <p>12000 votos</p>
-                                    </div>
-                                </div>
-                                <div class="datos_agrupacion">
-                                    <p class="agrupacion_nombre">PJ</p>
-                                    <div>
-                                        <p>20%</p>
-                                        <p>12000 votos</p>
-                                    </div>
-                                </div>
-                                <div class="datos_agrupacion">
-                                    <p class="agrupacion_nombre">PJ</p>
-                                    <div>
-                                        <p>20%</p>
-                                        <p>12000 votos</p>
-                                    </div>
-                                </div>
-                                <div class="datos_agrupacion">
-                                    <p class="agrupacion_nombre">PJ</p>
-                                    <div>
-                                        <p>20%</p>
-                                        <p>12000 votos</p>
-                                    </div>
-                                </div>
-                                <div class="datos_agrupacion">
-                                    <p class="agrupacion_nombre">PJ</p>
-                                    <div>
-                                        <p>20%</p>
-                                        <p>12000 votos</p>
-                                    </div>
-                                </div>
                             </div>
                         </td>
                     </tr>

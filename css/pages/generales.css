@@ -22,6 +22,27 @@
     cursor: pointer;
 }
 
+#años {
+    min-width: 50px;
+    max-width: 50px;
+}
+
+#cargos {
+    min-width: 58px;
+    max-width: 58px;
+}
+
+#distritos {
+    min-width: 67px;
+    max-width: 67px;
+}
+
+#secciones {
+    min-width: 71px;
+    max-width: 30px;
+}
+
+
 
 .boton_filtrar {
     background-color: white;
@@ -152,7 +173,7 @@
 
 
 .contenedor-agrupaciones {
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 325px;
 }
 
@@ -228,7 +249,7 @@ h3 {
 }
 
 .mapa {
-    height: 100%;
+    height: 500px;
 }
 
 .mapa path {
@@ -269,7 +290,8 @@ h3 {
 }
 
 .chart-wrap .grid {
-    margin-left: 50px;
+    margin-left: 25px;
+    margin-top: 50px;
     position: relative;
     padding: 5px 0 5px 0;
     height: 100%;
