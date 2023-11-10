@@ -1,6 +1,6 @@
 
 // ---------- VARIABLES ----------
-
+const tipoRecuento = 1;
 const tipoEleccion = 1
 const periodosSelect = document.getElementById('años')
 const cargoSelect = document.getElementById('cargos')
@@ -170,10 +170,15 @@ function cargarDistritos() {
             eleccion.Cargos.forEach((cargo) => {
                 if (cargo.IdCargo == cargoSelect.value) {
                     cargo.Distritos.forEach((distrito) => {
-                        let option = document.createElement('option')
-                        option.text = distrito.Distrito
-                        option.value = distrito.IdDistrito
-                        distritoSelect.appendChild(option)
+                        // Hacemos que no se agregue el distrito ARGENTINA ya que este no devuelve ninguna seccion
+                        if(distrito.IdDistrito != 0){
+                            let option = document.createElement('option')
+                            option.text = distrito.Distrito
+                            option.value = distrito.IdDistrito
+                            distritoSelect.appendChild(option)
+
+                        }
+                        
                     })
                 }
             });
@@ -198,14 +203,10 @@ function cargarSecciones() {
                                 hdSeccionProvincial.value = `${seccionProvincial.IDSeccionProvincial}`
                                 // Se recorren los distritos y se carga el combo
                                 seccionProvincial.Secciones.forEach((seccion) => {
-                                    // Se valida que la seccion no sea null
-                                    if(seccion.Seccion){
-                                        let option = document.createElement('option')
-                                        option.text = seccion.Seccion
-                                        option.value = seccion.IdSeccion
-                                        seccionesSelect.appendChild(option)
-                                    }
-                                                                                       
+                                    let option = document.createElement('option')
+                                    option.text = seccion.Seccion
+                                    option.value = seccion.IdSeccion
+                                    seccionesSelect.appendChild(option)                                                 
                                 })
                             })
                         }
@@ -214,13 +215,6 @@ function cargarSecciones() {
             });
         }
     })
-    
-    // Si no hay secciones se oculta el combo de secciones
-    if(seccionesSelect.childElementCount == 1){
-        seccionesSelect.style.display = 'none'
-    }else{
-        seccionesSelect.style.display = 'inline'
-    }
 }
 
 
