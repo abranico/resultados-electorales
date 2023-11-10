@@ -1,12 +1,6 @@
 const tipoRecuento = 1;
 
 
-const agrupacionesColores = {
-    '503':{colorPleno: "var(--grafica-amarillo)", colorLiviano: "var(--grafica-amarillo-claro)"},
-
-}
-
-
 const mapas = [
     'ARGENTINA',
 
